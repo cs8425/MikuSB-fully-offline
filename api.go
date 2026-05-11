@@ -88,8 +88,8 @@ func initRoute(mux *http.ServeMux, mockServerAddr string) {
 			// Extract version if present in query or path
 			version := r.URL.Query().Get("version")
 			// if path is /query_version=1.0, version is "1.0"
-			if strings.HasPrefix(path, "/query_version=") {
-				version = strings.TrimPrefix(path, "/query_version=")
+			if after, ok := strings.CutPrefix(path, "/query_version="); ok {
+				version = after
 			}
 			writeJSON(w, buildServerList(version, mockServerAddr))
 			return
