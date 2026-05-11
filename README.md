@@ -32,3 +32,10 @@ a tool work with MikuSB, turn it into fully offline
 1. clone the code
 2. build: `go build -trimpath -ldflags="-s -w" .`
 
+
+## Special Thanks
+
+* [MikuLeaks/MikuSB](https://github.com/MikuLeaks/MikuSB) : the original work, this tool MUST use with it
+* [Naruse](https://github.com/DevilProMT) : the author of MikuSB
+* [Kei-Luna](https://github.com/Kei-Luna) : the author of MikuSB
+
