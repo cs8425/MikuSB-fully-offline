@@ -25,3 +25,10 @@ a tool work with MikuSB, turn it into fully offline
 		2. linux: `ALL_PROXY="socks5h://127.0.0.1:18888" %command%`
 	2. bat file: add env variable: `set ALL_PROXY=socks5h://127.0.0.1:18888`
 8. launch the game
+
+
+## build
+
+1. clone the code
+2. build: `go build -trimpath -ldflags="-s -w" .`
+
